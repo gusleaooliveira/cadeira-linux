@@ -12,10 +12,14 @@ def executarMuitos(mensagens, comandos):
 
 def verificar(mensagem):
     valor=input(mensagem).lower()[0]
-    while valor != 's' or valor != 'n':
-        valor=input(mensagem)
+    print(valor)
     print("")
-    return valor
+    if valor == 's':
+        return valor
+    elif valor == 'n':
+        return valor
+    else:
+        return verificar(mensagem)
 
 
 print("Aula 01:")
@@ -51,6 +55,6 @@ comandos=[
     'apt update',
     'echo "Acquire::ForceIPv4 \"true\";" > /etc/apt/apt.conf.d/99force-ipv4',
     'apt update',
-    
+
     ]
 executarMuitos(mensagens, comandos)
