@@ -65,6 +65,6 @@ mensagens=[
 ]
 
 for item in instalar:
-    executar(mensagens[0], comando[0]+" "+item)
+    executar(mensagens[0], comandos[0]+" "+item)
 
-executar(mensagens[1], comando[1])
+executar(mensagens[1], comandos[1])
