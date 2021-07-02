@@ -56,7 +56,7 @@ instalar=[
 
 comandos=[
 "apt install"
-"wget ttps://files;.phpmydamin.net/phpMyAdmin/4.9.0.1/phpMyAdmin-4.9.0.1-all-languages.zip"
+"wget https://files.phpmydamin.net/phpMyAdmin/4.9.0.1/phpMyAdmin-4.9.0.1-all-languages.zip"
 ]
 
 mensagens=[
@@ -64,9 +64,7 @@ mensagens=[
 "Baixar arquivo:"
 ]
 
-for i, comando in enumerate(comandos):
-    if i == 0:
-        for item in instalar:
-            executar(mensagens[i], comando+" "+item)
-    else:
-        executar(mensagens[i], comando)
+for item in instalar:
+    executar(mensagens[0], comando[0]+" "+item)
+
+executar(mensagens[1], comando[1])
