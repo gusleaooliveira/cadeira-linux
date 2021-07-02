@@ -59,7 +59,7 @@ comandos=[
 "wget ttps://files;.phpmydamin.net/phpMyAdmin/4.9.0.1/phpMyAdmin-4.9.0.1-all-languages.zip"
 ]
 
-menagens=[
+mensagens=[
 "Instalar item:",
 "Baixar arquivo:"
 ]
