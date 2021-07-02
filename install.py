@@ -21,7 +21,7 @@ def verificar(mensagem):
     else:
         return verificar(mensagem)
 
-instalar=[
+lista=[
 "openssh-server",
 "vlan",
 "isc-dhcp-server",
@@ -55,7 +55,7 @@ instalar=[
 ]
 
 comandos=[
-"apt install"
+"apt install",
 "wget https://files.phpmydamin.net/phpMyAdmin/4.9.0.1/phpMyAdmin-4.9.0.1-all-languages.zip"
 ]
 
@@ -64,7 +64,7 @@ mensagens=[
 "Baixar arquivo:"
 ]
 
-for item in instalar:
-    executar(mensagens[0], comandos[0]+" "+item)
+for item in lista:
+    executar(mensagens[0], comandos[0]+" "+item+" -y")
 
 executar(mensagens[1], comandos[1])
